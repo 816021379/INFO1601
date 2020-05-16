@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Twitter Tools</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel = "stylesheet" type = "text/css" href = "/stylesheets/style.css" />
+
+		
+	</head>
+	<body>
+		<main>
+
+			<nav class="tweet">
+				<div class="container">
+					<div class="nav-wrapper">
+						<a href="#" class="brand-logo tweet">Twit-Tools</a>
+					</div>
+				</div>
+			</nav>
+			<div id="app">
+			<div class="container">
+				<div class="section">
+					<div class="row">
+						<form action="#" method="POST" onsubmit="return false">
+							<div class="input-field">
+								<input placeholder="Please search for a username"name="screen_name" id="screen_name" v-model="screen_name" v-on:keydown.enter="submit" type="text" required>
+							</div>
+						</form>
+					</div>
+					<div class="row">
+						<div v-if="users.length">
+							<template>
+								<div v-for="user in users"  class="col s12 m6 l4 ">
+								<div class="card-panel hoverable">
+								<img class="cen" :src="user.avatar">
+								<div class="icon-block">
+									<h5 class="center"><a :href="'http://twitter.com/'+user.screen_name">{{ user.name }}</a></h5>
+									<p class="light center-align">@{{ user.screen_name }}</p>
+									<p class="light center-align">This person does not follow you.</p>
+								</div>
+								</div>
+								</div>
+							</template>
+						</div>
+						<div v-else>Users will be shown after you search.
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			
+		</main>
+
+	</body>
+	<footer class="page-footer tweet" >
+				<div class="container">
+					<div class="row">
+						<div class="col l6 s12">
+							<h5 class="white-text">Footer</h5>
+							<p class="grey-text text-lighten-4">INFO 1601 Group project</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container">
+					Student IDs:
+					</div>
+				</div>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+				<script type="text/javascript" src="js/materialize.min.js"></script>
+				
+				
+				
+				<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="javascripts/scripts.js"></script>
+	</footer>
+</html>

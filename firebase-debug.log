@@ -1,0 +1,44 @@
+[debug] [2020-05-16T02:41:13.616Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T02:41:13.618Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Josh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-16T02:41:13.618Z] CLI Version:   8.2.0
+[debug] [2020-05-16T02:41:13.618Z] Platform:      win32
+[debug] [2020-05-16T02:41:13.618Z] Node Version:  v12.16.2
+[debug] [2020-05-16T02:41:13.619Z] Time:          Fri May 15 2020 22:41:13 GMT-0400 (Venezuela Time)
+[debug] [2020-05-16T02:41:13.619Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T02:41:13.619Z] 
+[debug] [2020-05-16T02:41:13.625Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-16T02:41:13.625Z] > authorizing via signed-in user
+[debug] [2020-05-16T02:41:13.626Z] [iam] checking project info1601-75c81 for permissions ["firebase.projects.get"]
+[debug] [2020-05-16T02:41:13.628Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/info1601-75c81:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-16T02:41:14.355Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 16 May 2020 02:41:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=502","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-16T02:41:14.356Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/info1601-75c81  
+ 
+[debug] [2020-05-16T02:41:14.638Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 16 May 2020 02:41:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\Josh\Desktop\Node\info1601 - Copy'...
+[info] 
+[debug] [2020-05-16T02:41:14.643Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/info1601-75c81/webApps/-/config  
+ 
+[debug] [2020-05-16T02:41:15.205Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 16 May 2020 02:41:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Josh\Desktop\Node\info1601 - Copy\functions" for Cloud Functions...
+[debug] [2020-05-16T02:41:16.332Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T02:41:16.332Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-16T02:41:16.332Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T02:41:16.332Z] [worker-~diagnostic~-49cfb109-a206-4b4d-9662-2cb46658726f]: Assigning socketPath: \\?\pipe\C:\Users\Josh\Desktop\Node\info1601 - Copy\functions\71412 
+[debug] [2020-05-16T02:41:16.332Z] [worker-~diagnostic~-49cfb109-a206-4b4d-9662-2cb46658726f]: BUSY 
+[debug] [2020-05-16T02:41:16.619Z] [runtime-status] [71412] Functions runtime initialized. {"cwd":"C:\\Users\\Josh\\Desktop\\Node\\info1601 - Copy\\functions","node_version":"12.16.2"} 
+[debug] [2020-05-16T02:41:16.619Z] [runtime-status] [71412] Disabled runtime features: undefined 
+[debug] [2020-05-16T02:41:16.622Z] [runtime-status] [71412] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"C:\\Users\\Josh\\Desktop\\Node\\info1601 - Copy\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T02:41:16.625Z] [runtime-status] [71412] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Josh\\Desktop\\Node\\info1601 - Copy\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T02:41:16.626Z] [runtime-status] [71412] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T02:41:16.656Z] [runtime-status] [71412] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T02:41:16.657Z] [runtime-status] [71412] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Josh\\Desktop\\Node\\info1601 - Copy\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T02:41:16.658Z] [runtime-status] [71412] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"C:\\Users\\Josh\\Desktop\\Node\\info1601 - Copy\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-05-16T02:41:16.658Z] [runtime-status] [71412] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"C:\\Users\\Josh\\Desktop\\Node\\info1601 - Copy\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-05-16T02:41:16.659Z] [runtime-status] [71412] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"C:\\Users\\Josh\\Desktop\\Node\\info1601 - Copy\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-05-16T02:41:16.831Z] [worker-~diagnostic~-49cfb109-a206-4b4d-9662-2cb46658726f]: IDLE 

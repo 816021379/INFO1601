@@ -1,0 +1,28 @@
+img {
+  width: auto;
+  height: auto;
+  position: center;
+}
+
+.tweet {
+	background-color: #00acee;
+}
+
+body{
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main{
+	flex:1 0 auto;
+}
+.cen {
+  display: block;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.pad{
+}
